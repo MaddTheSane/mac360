@@ -13,11 +13,12 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-	NSBitmapImageRep *tmpRef = [[NSBitmapImageRep alloc] initWithFocusedViewRect:dirtyRect];
+	NSBitmapImageRep *tmpRef = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL pixelsWide:dirtyRect.size.width pixelsHigh:dirtyRect.size.height bitsPerSample:8 samplesPerPixel:4 hasAlpha:YES isPlanar:YES colorSpaceName:NSCalibratedRGBColorSpace bitmapFormat:NSAlphaFirstBitmapFormat bytesPerRow:4 * dirtyRect.size.width bitsPerPixel:32];
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext: [NSGraphicsContext graphicsContextWithBitmapImageRep:tmpRef]];
 	[super drawRect:dirtyRect];
 	[NSGraphicsContext restoreGraphicsState];
+	[tmpRef release];
 }
 
 @end

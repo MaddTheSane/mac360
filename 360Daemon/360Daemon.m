@@ -73,12 +73,13 @@ static void callbackAlert(CFUserNotificationRef userNotification, CFOptionFlags 
     if (responseFlags & CFUserNotificationCheckBoxChecked(0))
         SetAlertDisabled(activeAlertIndex);
     releaseAlert();
-    [pool release];
+    [pool drain];
 }
 
 static void ShowAlert(int index)
 {
-    SInt32 error;
+    NSAutoreleasePool *pool = [NSAutoreleasePool new];
+	SInt32 error;
     NSArray *checkBoxes = [NSArray arrayWithObjects:CHECK_SHOWAGAIN, nil];
     NSArray *dictKeys = [NSArray arrayWithObjects:
         (NSString*)kCFUserNotificationAlertHeaderKey,
@@ -95,7 +96,10 @@ static void ShowAlert(int index)
     NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:dictValues forKeys:dictKeys];
     
     if (AlertDisabled(index))
+    {
+        [pool drain];
         return;
+    }
 
     if (activeAlert != nil)
     {
@@ -107,6 +111,7 @@ static void ShowAlert(int index)
     activeAlert = CFUserNotificationCreate(kCFAllocatorDefault, 0, kCFUserNotificationPlainAlertLevel, &error, (CFDictionaryRef)dictionary);
     activeAlertSource = CFUserNotificationCreateRunLoopSource(kCFAllocatorDefault, activeAlert, callbackAlert, 0);
     CFRunLoopAddSource(CFRunLoopGetCurrent(), activeAlertSource, kCFRunLoopCommonModes);
+	[pool drain];
 }
 
 static void ConfigureDevice(io_service_t object)
@@ -226,7 +231,7 @@ static void callbackConnected(void *param,io_iterator_t iterator)
         }
         IOObjectRelease(object);
     }
-    [pool release];
+    [pool drain];
 }
 
 // Supported device - disconnecting
@@ -261,7 +266,7 @@ static void callbackDisconnected(void *param, io_iterator_t iterator)
         }
         IOObjectRelease(object);
     }
-    [pool release];
+    [pool drain];
 }
 
 // Entry point
@@ -303,6 +308,6 @@ int main (int argc, const char * argv[])
     CFRunLoopSourceInvalidate(notifySource);
     IONotificationPortDestroy(notifyPort);
     // End
-    [pool release];
+    [pool drain];
     return 0;
 }

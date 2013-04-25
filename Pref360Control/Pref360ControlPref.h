@@ -49,7 +49,7 @@
     IBOutlet NSSlider *leftStickDeadzone;
     IBOutlet NSButton *leftStickInvertX;
     IBOutlet NSButton *leftStickInvertY;
-    IBOutlet NSProgressIndicator *leftTrigger;
+    IBOutlet NSLevelIndicator *leftTrigger;
     IBOutlet MyMainButtons *rightButtons;
     IBOutlet MyShoulderButton *rightShoulder;
     IBOutlet MyAnalogStick *rightStick;
@@ -57,7 +57,7 @@
     IBOutlet NSSlider *rightStickDeadzone;
     IBOutlet NSButton *rightStickInvertX;
     IBOutlet NSButton *rightStickInvertY;
-    IBOutlet NSProgressIndicator *rightTrigger;
+    IBOutlet NSLevelIndicator *rightTrigger;
     IBOutlet NSImageView *batteryLevel;
     IBOutlet DeviceLister *deviceLister;
     IBOutlet NSButton *powerOff;

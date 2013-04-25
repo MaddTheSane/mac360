@@ -33,7 +33,7 @@ static id GetDeviceValue(io_service_t device, NSString *key)
     CFTypeRef value;
     
     value = IORegistryEntrySearchCFProperty(device, kIOServicePlane, (CFStringRef)key, kCFAllocatorDefault, kIORegistryIterateRecursively);
-    return [((NSObject*)value) autorelease];
+    return [NSMakeCollectable(value) autorelease];
 }
 
 // Make sure a name is as nice as possible for eventually going into the XML for the driver

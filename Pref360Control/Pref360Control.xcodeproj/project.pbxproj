@@ -3,37 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B04BE7313763D04005FA9F8 /* DeviceLister.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B04BE7113763D04005FA9F8 /* DeviceLister.h */; };
 		3B04BE7413763D04005FA9F8 /* DeviceLister.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B04BE7213763D04005FA9F8 /* DeviceLister.m */; };
-		3B04BEA61376416D005FA9F8 /* DriverTool in Resources */ = {isa = PBXBuildFile; fileRef = 3B04BEA51376416D005FA9F8 /* DriverTool */; };
 		3B47D9ED0B93C2BF00F200B8 /* battNone.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3B47D9EC0B93C2BF00F200B8 /* battNone.tif */; };
 		3B47D9F20B93C31400F200B8 /* batt1.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3B47D9EE0B93C31400F200B8 /* batt1.tif */; };
 		3B47D9F30B93C31400F200B8 /* batt0.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3B47D9EF0B93C31400F200B8 /* batt0.tif */; };
 		3B47D9F40B93C31400F200B8 /* batt3.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3B47D9F00B93C31400F200B8 /* batt3.tif */; };
 		3B47D9F50B93C31400F200B8 /* batt2.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3B47D9F10B93C31400F200B8 /* batt2.tif */; };
-		3B86987F0CE2A22100283CEC /* ControlPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B86987D0CE2A22100283CEC /* ControlPrefs.h */; };
 		3B8698800CE2A22100283CEC /* ControlPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B86987E0CE2A22100283CEC /* ControlPrefs.m */; };
 		3B8B91321376FC120047D446 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8B91311376FC120047D446 /* Security.framework */; };
-		3BBEAB01096B2C4C00F2E37B /* MyAnalogStick.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBEAAFF096B2C4C00F2E37B /* MyAnalogStick.h */; };
 		3BBEAB02096B2C4C00F2E37B /* MyAnalogStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEAB00096B2C4C00F2E37B /* MyAnalogStick.m */; };
 		3BBEAB05096B2C5200F2E37B /* MyCentreButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEAB03096B2C5200F2E37B /* MyCentreButtons.m */; };
-		3BBEAB06096B2C5200F2E37B /* MyCentreButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBEAB04096B2C5200F2E37B /* MyCentreButtons.h */; };
 		3BBEAB09096B2C5600F2E37B /* MyDigitalStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEAB07096B2C5600F2E37B /* MyDigitalStick.m */; };
-		3BBEAB0A096B2C5600F2E37B /* MyDigitalStick.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBEAB08096B2C5600F2E37B /* MyDigitalStick.h */; };
-		3BBEAB0D096B2C5B00F2E37B /* MyMainButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBEAB0B096B2C5B00F2E37B /* MyMainButtons.h */; };
 		3BBEAB0E096B2C5B00F2E37B /* MyMainButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEAB0C096B2C5B00F2E37B /* MyMainButtons.m */; };
-		3BBEAB11096B2C6000F2E37B /* MyShoulderButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBEAB0F096B2C6000F2E37B /* MyShoulderButton.h */; };
 		3BBEAB12096B2C6000F2E37B /* MyShoulderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEAB10096B2C6000F2E37B /* MyShoulderButton.m */; };
 		3BBEAB2D096B6EDE00F2E37B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBEAB2C096B6EDE00F2E37B /* IOKit.framework */; };
-		3BC41F32096C85CB00664A42 /* DeviceItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC41F30096C85CB00664A42 /* DeviceItem.h */; };
 		3BC41F33096C85CB00664A42 /* DeviceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC41F31096C85CB00664A42 /* DeviceItem.m */; };
 		3BC41F47096C8D0300664A42 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC41F46096C8D0300664A42 /* ForceFeedback.framework */; };
-		8D202CEA0486D31800D8A456 /* Pref360Control_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* Pref360Control_Prefix.pch */; };
-		8D202CEB0486D31800D8A456 /* Pref360ControlPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* Pref360ControlPref.h */; };
+		556CB629147217D9009B2F34 /* DriverTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = 556CB62414721743009B2F34 /* DriverTool */; };
+		55F113E117287C3500BDF673 /* MiceInverseLevelIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F113E017287C3500BDF673 /* MiceInverseLevelIndicator.m */; };
 		8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D202CEE0486D31800D8A456 /* Pref360ControlPref.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F506C040013D9D8001CA16C8 /* Pref360ControlPref.tiff */; };
 		8D202CEF0486D31800D8A456 /* Pref360ControlPref.nib in Resources */ = {isa = PBXBuildFile; fileRef = F506C042013D9D8C01CA16C8 /* Pref360ControlPref.nib */; };
@@ -42,15 +33,44 @@
 		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		556CB62314721743009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB61B14721743009B2F34 /* DriverTool.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = DriverTool;
+		};
+		556CB626147217B9009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB61B14721743009B2F34 /* DriverTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76F960486AA7600D96B5E;
+			remoteInfo = DriverTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		556CB628147217D0009B2F34 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				556CB629147217D9009B2F34 /* DriverTool in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCFA20370C41700C91783 /* Pref360Control_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pref360Control_Prefix.pch; sourceTree = "<group>"; };
 		3B04BE7113763D04005FA9F8 /* DeviceLister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLister.h; sourceTree = "<group>"; };
 		3B04BE7213763D04005FA9F8 /* DeviceLister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLister.m; sourceTree = "<group>"; };
-		3B04BEA51376416D005FA9F8 /* DriverTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = DriverTool; path = ../DriverTool/build/Release/DriverTool; sourceTree = SOURCE_ROOT; };
 		3B47D9EC0B93C2BF00F200B8 /* battNone.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = battNone.tif; sourceTree = "<group>"; };
 		3B47D9EE0B93C31400F200B8 /* batt1.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = batt1.tif; sourceTree = "<group>"; };
 		3B47D9EF0B93C31400F200B8 /* batt0.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = batt0.tif; sourceTree = "<group>"; };
@@ -73,6 +93,9 @@
 		3BC41F30096C85CB00664A42 /* DeviceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceItem.h; sourceTree = "<group>"; };
 		3BC41F31096C85CB00664A42 /* DeviceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceItem.m; sourceTree = "<group>"; };
 		3BC41F46096C8D0300664A42 /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = /System/Library/Frameworks/ForceFeedback.framework; sourceTree = "<absolute>"; };
+		556CB61B14721743009B2F34 /* DriverTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DriverTool.xcodeproj; path = ../DriverTool/DriverTool.xcodeproj; sourceTree = "<group>"; };
+		55F113DF17287C3500BDF673 /* MiceInverseLevelIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiceInverseLevelIndicator.h; sourceTree = "<group>"; };
+		55F113E017287C3500BDF673 /* MiceInverseLevelIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiceInverseLevelIndicator.m; sourceTree = "<group>"; };
 		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D202CF80486D31800D8A456 /* Pref360Control.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pref360Control.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
@@ -122,7 +145,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3B04BEA51376416D005FA9F8 /* DriverTool */,
+				556CB61B14721743009B2F34 /* DriverTool.xcodeproj */,
 				8D202CF70486D31800D8A456 /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				F506C040013D9D8001CA16C8 /* Pref360ControlPref.tiff */,
@@ -157,6 +180,8 @@
 				3BC41F31096C85CB00664A42 /* DeviceItem.m */,
 				3B04BE7113763D04005FA9F8 /* DeviceLister.h */,
 				3B04BE7213763D04005FA9F8 /* DeviceLister.m */,
+				55F113DF17287C3500BDF673 /* MiceInverseLevelIndicator.h */,
+				55F113E017287C3500BDF673 /* MiceInverseLevelIndicator.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -198,42 +223,30 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		8D202CE90486D31800D8A456 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D202CEA0486D31800D8A456 /* Pref360Control_Prefix.pch in Headers */,
-				8D202CEB0486D31800D8A456 /* Pref360ControlPref.h in Headers */,
-				3BBEAB01096B2C4C00F2E37B /* MyAnalogStick.h in Headers */,
-				3BBEAB06096B2C5200F2E37B /* MyCentreButtons.h in Headers */,
-				3BBEAB0A096B2C5600F2E37B /* MyDigitalStick.h in Headers */,
-				3BBEAB0D096B2C5B00F2E37B /* MyMainButtons.h in Headers */,
-				3BBEAB11096B2C6000F2E37B /* MyShoulderButton.h in Headers */,
-				3BC41F32096C85CB00664A42 /* DeviceItem.h in Headers */,
-				3B86987F0CE2A22100283CEC /* ControlPrefs.h in Headers */,
-				3B04BE7313763D04005FA9F8 /* DeviceLister.h in Headers */,
+		556CB61C14721743009B2F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556CB62414721743009B2F34 /* DriverTool */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			name = Products;
+			sourceTree = "<group>";
 		};
-/* End PBXHeadersBuildPhase section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		8D202CE80486D31800D8A456 /* Pref360Control */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BBDC6A5097946B50023AAD8 /* Build configuration list for PBXNativeTarget "Pref360Control" */;
 			buildPhases = (
-				8D202CE90486D31800D8A456 /* Headers */,
-				8D202CEC0486D31800D8A456 /* Resources */,
 				8D202CF00486D31800D8A456 /* Sources */,
 				8D202CF20486D31800D8A456 /* Frameworks */,
-				8D202CF50486D31800D8A456 /* Rez */,
+				8D202CEC0486D31800D8A456 /* Resources */,
+				556CB628147217D0009B2F34 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				556CB627147217B9009B2F34 /* PBXTargetDependency */,
 			);
 			name = Pref360Control;
 			productInstallPath = "$(HOME)/Library/PreferencePanes";
@@ -246,8 +259,11 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = 3BBDC6A9097946B50023AAD8 /* Build configuration list for PBXProject "Pref360Control" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -258,12 +274,28 @@
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Pref360Control */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 556CB61C14721743009B2F34 /* Products */;
+					ProjectRef = 556CB61B14721743009B2F34 /* DriverTool.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D202CE80486D31800D8A456 /* Pref360Control */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		556CB62414721743009B2F34 /* DriverTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DriverTool;
+			remoteRef = 556CB62314721743009B2F34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D202CEC0486D31800D8A456 /* Resources */ = {
@@ -278,21 +310,10 @@
 				3B47D9F30B93C31400F200B8 /* batt0.tif in Resources */,
 				3B47D9F40B93C31400F200B8 /* batt3.tif in Resources */,
 				3B47D9F50B93C31400F200B8 /* batt2.tif in Resources */,
-				3B04BEA61376416D005FA9F8 /* DriverTool in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		8D202CF50486D31800D8A456 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D202CF00486D31800D8A456 /* Sources */ = {
@@ -308,10 +329,19 @@
 				3BC41F33096C85CB00664A42 /* DeviceItem.m in Sources */,
 				3B8698800CE2A22100283CEC /* ControlPrefs.m in Sources */,
 				3B04BE7413763D04005FA9F8 /* DeviceLister.m in Sources */,
+				55F113E117287C3500BDF673 /* MiceInverseLevelIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		556CB627147217B9009B2F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DriverTool;
+			targetProxy = 556CB626147217B9009B2F34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
@@ -333,16 +363,13 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3BBDC6A6097946B50023AAD8 /* Development */ = {
+		3BBDC6A6097946B50023AAD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUGGING_SYMBOLS = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				"GCC_ENABLE_OBJC_GC[arch=x86_64]" = supported;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -351,38 +378,26 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				LIBRARY_SEARCH_PATHS = "";
-				LIBRARY_STYLE = Bundle;
+				INSTALL_PATH = /Library/PreferencePanes;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-twolevel_namespace",
 				);
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Pref360Control;
-				SDKROOT = "";
 				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = prefPane;
-				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		3BBDC6A7097946B50023AAD8 /* Deployment */ = {
+		3BBDC6A7097946B50023AAD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				"GCC_ENABLE_OBJC_GC[arch=x86_64]" = supported;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -390,93 +405,45 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				LIBRARY_SEARCH_PATHS = "";
-				LIBRARY_STYLE = Bundle;
+				INSTALL_PATH = /Library/PreferencePanes;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-twolevel_namespace",
 				);
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Pref360Control;
 				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = prefPane;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-		3BBDC6A8097946B50023AAD8 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				"GCC_ENABLE_OBJC_GC[arch=x86_64]" = supported;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Pref360Control_Prefix.pch;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				LIBRARY_SEARCH_PATHS = "";
-				LIBRARY_STYLE = Bundle;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-bundle",
-					"-twolevel_namespace",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Pref360Control;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = prefPane;
 			};
-			name = Default;
+			name = Release;
 		};
-		3BBDC6AA097946B50023AAD8 /* Development */ = {
+		3BBDC6AA097946B50023AAD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: Colin Munro";
+				ARCHS = (
+					ppc,
+					x86_64,
+					i386,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
-			name = Development;
+			name = Debug;
 		};
-		3BBDC6AB097946B50023AAD8 /* Deployment */ = {
+		3BBDC6AB097946B50023AAD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Colin Munro";
+				ARCHS = (
+					ppc,
+					x86_64,
+					i386,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = "";
+				SDKROOT = macosx;
 			};
-			name = Deployment;
-		};
-		3BBDC6AC097946B50023AAD8 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: Colin Munro";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = "";
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -484,22 +451,20 @@
 		3BBDC6A5097946B50023AAD8 /* Build configuration list for PBXNativeTarget "Pref360Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BBDC6A6097946B50023AAD8 /* Development */,
-				3BBDC6A7097946B50023AAD8 /* Deployment */,
-				3BBDC6A8097946B50023AAD8 /* Default */,
+				3BBDC6A6097946B50023AAD8 /* Debug */,
+				3BBDC6A7097946B50023AAD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		3BBDC6A9097946B50023AAD8 /* Build configuration list for PBXProject "Pref360Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BBDC6AA097946B50023AAD8 /* Development */,
-				3BBDC6AB097946B50023AAD8 /* Deployment */,
-				3BBDC6AC097946B50023AAD8 /* Default */,
+				3BBDC6AA097946B50023AAD8 /* Debug */,
+				3BBDC6AB097946B50023AAD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

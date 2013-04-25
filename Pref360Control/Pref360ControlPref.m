@@ -636,6 +636,45 @@ static void callbackHandleDevice(void *param,io_iterator_t iterator)
     [super dealloc];
 }
 
+- (void)finalize
+{
+    int i;
+    DeviceItem *item;
+    FFEFFESCAPE escape;
+    unsigned char c;
+    
+    // Remove notification source
+    IOObjectRelease(onIteratorWired);
+    IOObjectRelease(onIteratorWireless);
+    IOObjectRelease(offIteratorWired);
+    IOObjectRelease(offIteratorWireless);
+    CFRunLoopRemoveSource(CFRunLoopGetCurrent(),notifySource,kCFRunLoopCommonModes);
+    CFRunLoopSourceInvalidate(notifySource);
+    IONotificationPortDestroy(notifyPort);
+    // Release device and info
+    [self stopDevice];
+    
+    for (i = 0; i < [deviceArray count]; i++)
+    {
+        item = [deviceArray objectAtIndex:i];
+        if ([item ffDevice] == 0)
+            continue;
+        c = 0x06 + (i % 0x04);
+        escape.dwSize = sizeof(escape);
+        escape.dwCommand = 0x02;
+        escape.cbInBuffer = sizeof(c);
+        escape.lpvInBuffer = &c;
+        escape.cbOutBuffer = 0;
+        escape.lpvOutBuffer = NULL;
+        FFDeviceEscape([item ffDevice], &escape);
+    }
+    [self deleteDeviceList];
+    // Close master port
+    mach_port_deallocate(mach_task_self(),masterPort);
+    // Done
+    [super finalize];
+}
+
 - (mach_port_t)masterPort
 {
     return masterPort;
@@ -679,11 +718,14 @@ static void callbackHandleDevice(void *param,io_iterator_t iterator)
     // Set property
     IORegistryEntrySetCFProperties(registryEntry, dict);
     SetController(GetSerialNumber(registryEntry), (NSDictionary*)dict);
+	CFRelease(values[4]);
+	CFRelease(values[5]);
     // Update UI
     [leftStick setLinked:([leftLinked state]==NSOnState)];
     [leftStick setDeadzone:[leftStickDeadzone doubleValue]];
     [rightStick setLinked:([rightLinked state]==NSOnState)];
     [rightStick setDeadzone:[rightStickDeadzone doubleValue]];
+	CFRelease(dict);
 }
 
 // Handle I/O Kit device add/remove

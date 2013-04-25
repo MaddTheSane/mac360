@@ -3,19 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 42;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3B7905000CE3F6A400ACB699 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7904FF0CE3F6A400ACB699 /* ForceFeedback.framework */; };
 		3B7A8E2C0CE14E38005BB45B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7A8E2B0CE14E38005BB45B /* IOKit.framework */; };
 		3B8698090CE2903100283CEC /* ControlPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8698080CE2903100283CEC /* ControlPrefs.m */; };
+		55CB7DAB16E5605D00B65287 /* Alert.tif in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B7904D50CE3F13700ACB699 /* Alert.tif */; };
+		55E2012816E577BF00BAA9B7 /* com.mice.360Daemon.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BBB7EED16C387C600BC7827 /* com.mice.360Daemon.plist */; };
 		8DD76F9A0486AA7600D96B5E /* 360Daemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* 360Daemon.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* 360Daemon.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* 360Daemon.1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		55CB7DAA16E5604C00B65287 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "/Library/Application Support/MICE/360Daemon/Resources";
+			dstSubfolderSpec = 0;
+			files = (
+				55CB7DAB16E5605D00B65287 /* Alert.tif in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		55E2012716E577A900BAA9B7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /Library/LaunchDaemons;
+			dstSubfolderSpec = 0;
+			files = (
+				55E2012816E577BF00BAA9B7 /* com.mice.360Daemon.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
@@ -116,6 +138,8 @@
 				8DD76F990486AA7600D96B5E /* Sources */,
 				8DD76F9B0486AA7600D96B5E /* Frameworks */,
 				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+				55CB7DAA16E5604C00B65287 /* CopyFiles */,
+				55E2012716E577A900BAA9B7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -167,18 +191,16 @@
 		1DEB927508733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = 360Daemon_Prefix.pch;
-				INSTALL_PATH = "$(HOME)/bin";
+				INSTALL_PATH = "/Library/Application Support/MICE/360Daemon";
 				PRODUCT_NAME = 360Daemon;
-				SDKROOT = "";
-				ZERO_LINK = YES;
 			};
 			name = Debug;
 		};
@@ -186,10 +208,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = 360Daemon_Prefix.pch;
-				INSTALL_PATH = "$(HOME)/bin";
+				INSTALL_PATH = "/Library/Application Support/MICE/360Daemon";
 				PRODUCT_NAME = 360Daemon;
 			};
 			name = Release;
@@ -197,27 +218,30 @@
 		1DEB927908733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: Colin Munro";
+				ARCHS = (
+					ppc,
+					x86_64,
+					i386,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = "";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		1DEB927A08733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Colin Munro";
+				ARCHS = (
+					ppc,
+					x86_64,
+					i386,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = "";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

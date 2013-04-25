@@ -20,12 +20,12 @@
     along with Foobar; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-#import <Cocoa/Cocoa.h>
-#import <IOKit/IOKitLib.h>
-#import <IOKit/IOCFPlugIn.h>
-#import <IOKit/hid/IOHIDLib.h>
-#import <IOKit/hid/IOHIDKeys.h>
-#import <ForceFeedback/ForceFeedback.h>
+#import <AppKit/AppKit.h>
+#include <IOKit/IOKitLib.h>
+#include <IOKit/IOCFPlugIn.h>
+#include <IOKit/hid/IOHIDLib.h>
+#include <IOKit/hid/IOHIDKeys.h>
+#include <ForceFeedback/ForceFeedback.h>
 
 @interface DeviceItem : NSObject {
     IOHIDDeviceInterface122 **interface;
@@ -34,7 +34,7 @@
     NSString *deviceName;
 }
 
-+ allocateDeviceItemForDevice:(io_service_t)device;
++ (id)allocateDeviceItemForDevice:(io_service_t)device;
 
 - (NSString*)name;
 - (IOHIDDeviceInterface122**)hidDevice;

@@ -28,7 +28,7 @@ void SetAlertDisabled(int index)
     NSNumber *value;
 
     prop = [NSString stringWithFormat:@"%@%i", D_SHOWONCE, index];
-    value = [NSNumber numberWithBool:TRUE];
+    value = [NSNumber numberWithBool:YES];
     CFPreferencesSetValue((CFStringRef)prop, value, DOM_DAEMON, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
     CFPreferencesSynchronize((CFStringRef)DOM_DAEMON, kCFPreferencesCurrentUser, kCFPreferencesCurrentHost);
 }
@@ -95,7 +95,7 @@ NSDictionary* GetKnownDevices(void)
     
     CFPreferencesSynchronize(DOM_CONTROLLERS, kCFPreferencesAnyUser, kCFPreferencesCurrentHost);
     value = CFPreferencesCopyValue((CFStringRef)D_KNOWNDEV, DOM_CONTROLLERS, kCFPreferencesAnyUser, kCFPreferencesCurrentHost);
-    data = [(NSData*)value autorelease];
+    data = [NSMakeCollectable(value) autorelease];
     if (data == nil)
         return nil;
     return [NSKeyedUnarchiver unarchiveObjectWithData:data];

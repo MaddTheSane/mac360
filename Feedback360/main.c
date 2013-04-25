@@ -32,7 +32,7 @@ static HRESULT Feedback360QueryInterface(void *that,REFIID iid,LPVOID *ppv)
     Xbox360ForceFeedback *this=FFThis(that);
     CFUUIDRef interface;
     
-    interface=CFUUIDCreateFromUUIDBytes(NULL,iid);
+    interface=CFUUIDCreateFromUUIDBytes(kCFAllocatorDefault,iid);
     // IOForceFeedbackDevice
     if(CFEqual(interface,kIOForceFeedbackDeviceInterfaceID))
         *ppv=&this->iIOForceFeedbackDeviceInterface;
@@ -53,6 +53,9 @@ static HRESULT Feedback360QueryInterface(void *that,REFIID iid,LPVOID *ppv)
 static ULONG Feedback360AddRef(void *that)
 {
     Xbox360ForceFeedback *this=FFThis(that);
+    if (this == NULL) {
+        return 0;
+    }
     this->refCount++;
     return this->refCount;
 }
@@ -60,6 +63,9 @@ static ULONG Feedback360AddRef(void *that)
 static ULONG Feedback360Release(void *that)
 {
     Xbox360ForceFeedback *this=FFThis(that);
+    if (this == NULL) {
+        return 0;
+    }
     this->refCount--;
     if(this->refCount==0) {
         dealloc360Feedback(this);

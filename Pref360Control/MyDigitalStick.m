@@ -53,13 +53,13 @@
     [path lineToPoint:point];
     [path closePath];
     // Done
-    return [path retain];
+    return [[path retain] autorelease];
 }
 
 - (id)initWithFrame:(NSRect)frameRect
 {
 	if ((self = [super initWithFrame:frameRect]) != nil) {
-        NSRect rect,triangle;
+        NSRect rect,triangle = NSMakeRect(0, 0, 0, 0);
         
         bUp=bDown=bLeft=bRight=FALSE;
         rect=[self bounds];

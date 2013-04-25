@@ -79,34 +79,34 @@ typedef struct {
 } ForceEmulator;
 
 // Constructor/destructor
-void Emulate_Initialise(ForceEmulator *emulator,int effectCount,void (*SetForce)(void*,unsigned char,unsigned char),void *context);
-void Emulate_Finalise(ForceEmulator *emulator);
+__private_extern__ void Emulate_Initialise(ForceEmulator *emulator,int effectCount,void (*SetForce)(void*,unsigned char,unsigned char),void *context);
+__private_extern__ void Emulate_Finalise(ForceEmulator *emulator);
 
 // Options
-void Emulate_SetGain(ForceEmulator *emulator,int gain,int gainMax);
-void Emulate_SetEnable(ForceEmulator *emulator,bool enable);
-bool Emulate_IsEnabled(ForceEmulator *emulator);
-void Emulate_SetPaused(ForceEmulator *emulator,bool enable);
-bool Emulate_IsPaused(ForceEmulator *emulator);
+__private_extern__ void Emulate_SetGain(ForceEmulator *emulator,int gain,int gainMax);
+__private_extern__ void Emulate_SetEnable(ForceEmulator *emulator,bool enable);
+__private_extern__ bool Emulate_IsEnabled(ForceEmulator *emulator);
+__private_extern__ void Emulate_SetPaused(ForceEmulator *emulator,bool enable);
+__private_extern__ bool Emulate_IsPaused(ForceEmulator *emulator);
 
 // Using effects
-int Emulate_CreateEffect(ForceEmulator *emulator,const ForceParams *params);
-bool Emulate_ChangeEffect(ForceEmulator *emulator,int index,const ForceParams *params);
-void Emulate_DestroyEffect(ForceEmulator *emulator,int index);
+__private_extern__ int Emulate_CreateEffect(ForceEmulator *emulator,const ForceParams *params);
+__private_extern__ bool Emulate_ChangeEffect(ForceEmulator *emulator,int index,const ForceParams *params);
+__private_extern__ void Emulate_DestroyEffect(ForceEmulator *emulator,int index);
 
-bool Emulate_IsValidEffect(ForceEmulator *emulator,int index);
-bool Emulate_IsPlaying(ForceEmulator *emulator,int index);
+__private_extern__ bool Emulate_IsValidEffect(ForceEmulator *emulator,int index);
+__private_extern__ bool Emulate_IsPlaying(ForceEmulator *emulator,int index);
 
-bool Emulate_IsEmpty(ForceEmulator *emulator);
+__private_extern__ bool Emulate_IsEmpty(ForceEmulator *emulator);
 
-void Emulate_Reset(ForceEmulator *emulator);
+__private_extern__ void Emulate_Reset(ForceEmulator *emulator);
 
-void Emulate_Start(ForceEmulator *emulator,int index,int iterations);
-void Emulate_Stop(ForceEmulator *emulator,int index);
-bool Emulate_IsStopped(ForceEmulator *emulator);
+__private_extern__ void Emulate_Start(ForceEmulator *emulator,int index,int iterations);
+__private_extern__ void Emulate_Stop(ForceEmulator *emulator,int index);
+__private_extern__ bool Emulate_IsStopped(ForceEmulator *emulator);
 
-UInt32 Emulate_Effects_Used(ForceEmulator *emulator);
-UInt32 Emulate_Effects_Total(ForceEmulator *emulator);
+__private_extern__ UInt32 Emulate_Effects_Used(ForceEmulator *emulator);
+__private_extern__ UInt32 Emulate_Effects_Total(ForceEmulator *emulator);
 
 // Callbacks
-void Emulate_Callback(ForceEmulator *emulator,unsigned char large,unsigned char small);
+__private_extern__ void Emulate_Callback(ForceEmulator *emulator,unsigned char large,unsigned char small);

@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		556CB677147219C7009B2F34 /* 360 Build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 556CB678147219C7009B2F34 /* Build configuration list for PBXAggregateTarget "360 Build" */;
+			buildPhases = (
+			);
+			dependencies = (
+				556CB69514721F61009B2F34 /* PBXTargetDependency */,
+				556CB67C147219DA009B2F34 /* PBXTargetDependency */,
+				556CB67E147219DA009B2F34 /* PBXTargetDependency */,
+				556CB682147219DA009B2F34 /* PBXTargetDependency */,
+				556CB684147219DA009B2F34 /* PBXTargetDependency */,
+			);
+			name = "360 Build";
+			productName = "360 Build";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		556CB645147218E9009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB63D147218E9009B2F34 /* 360Daemon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = 360Daemon;
+		};
+		556CB65D14721912009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB65114721912009B2F34 /* Pref360Control.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D202CF80486D31800D8A456;
+			remoteInfo = Pref360Control;
+		};
+		556CB66714721918009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32D94FD00562CBF700B6AF17;
+			remoteInfo = Wireless360Controller;
+		};
+		556CB6701472191D009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32D94FD00562CBF700B6AF17;
+			remoteInfo = WirelessGamingReceiver;
+		};
+		556CB67B147219DA009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D94FC30562CBF700B6AF17;
+			remoteInfo = Wireless360Controller;
+		};
+		556CB67D147219DA009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D94FC30562CBF700B6AF17;
+			remoteInfo = WirelessGamingReceiver;
+		};
+		556CB681147219DA009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB63D147218E9009B2F34 /* 360Daemon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76F960486AA7600D96B5E;
+			remoteInfo = 360Daemon;
+		};
+		556CB683147219DA009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB65114721912009B2F34 /* Pref360Control.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D202CE80486D31800D8A456;
+			remoteInfo = Pref360Control;
+		};
+		556CB69114721A42009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB68914721A42009B2F34 /* 360Controller.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32D94FD00562CBF700B6AF17;
+			remoteInfo = 360Controller;
+		};
+		556CB69414721F61009B2F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556CB68914721A42009B2F34 /* 360Controller.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D94FC30562CBF700B6AF17;
+			remoteInfo = 360Controller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		556CB63D147218E9009B2F34 /* 360Daemon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = 360Daemon.xcodeproj; path = 360Daemon/360Daemon.xcodeproj; sourceTree = "<group>"; };
+		556CB65114721912009B2F34 /* Pref360Control.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pref360Control.xcodeproj; path = Pref360Control/Pref360Control.xcodeproj; sourceTree = "<group>"; };
+		556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Wireless360Controller.xcodeproj; path = Wireless360Controller/Wireless360Controller.xcodeproj; sourceTree = "<group>"; };
+		556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WirelessGamingReceiver.xcodeproj; path = WirelessGamingReceiver/WirelessGamingReceiver.xcodeproj; sourceTree = "<group>"; };
+		556CB68914721A42009B2F34 /* 360Controller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = 360Controller.xcodeproj; path = 360Controller/360Controller.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		556CB60114721622009B2F34 = {
+			isa = PBXGroup;
+			children = (
+				556CB68914721A42009B2F34 /* 360Controller.xcodeproj */,
+				556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */,
+				556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */,
+				556CB65114721912009B2F34 /* Pref360Control.xcodeproj */,
+				556CB63D147218E9009B2F34 /* 360Daemon.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		556CB63E147218E9009B2F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556CB646147218E9009B2F34 /* 360Daemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556CB65214721912009B2F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556CB65E14721912009B2F34 /* Pref360Control.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556CB66114721918009B2F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556CB66814721918009B2F34 /* Wireless360Controller.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556CB66A1472191D009B2F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556CB6711472191D009B2F34 /* WirelessGamingReceiver.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556CB68A14721A42009B2F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556CB69214721A42009B2F34 /* 360Controller.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		556CB60314721622009B2F34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 556CB60614721622009B2F34 /* Build configuration list for PBXProject "360Builder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 556CB60114721622009B2F34;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 556CB68A14721A42009B2F34 /* Products */;
+					ProjectRef = 556CB68914721A42009B2F34 /* 360Controller.xcodeproj */;
+				},
+				{
+					ProductGroup = 556CB63E147218E9009B2F34 /* Products */;
+					ProjectRef = 556CB63D147218E9009B2F34 /* 360Daemon.xcodeproj */;
+				},
+				{
+					ProductGroup = 556CB65214721912009B2F34 /* Products */;
+					ProjectRef = 556CB65114721912009B2F34 /* Pref360Control.xcodeproj */;
+				},
+				{
+					ProductGroup = 556CB66114721918009B2F34 /* Products */;
+					ProjectRef = 556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */;
+				},
+				{
+					ProductGroup = 556CB66A1472191D009B2F34 /* Products */;
+					ProjectRef = 556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				556CB677147219C7009B2F34 /* 360 Build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		556CB646147218E9009B2F34 /* 360Daemon */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = 360Daemon;
+			remoteRef = 556CB645147218E9009B2F34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556CB65E14721912009B2F34 /* Pref360Control.prefPane */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Pref360Control.prefPane;
+			remoteRef = 556CB65D14721912009B2F34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556CB66814721918009B2F34 /* Wireless360Controller.kext */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Wireless360Controller.kext;
+			remoteRef = 556CB66714721918009B2F34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556CB6711472191D009B2F34 /* WirelessGamingReceiver.kext */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WirelessGamingReceiver.kext;
+			remoteRef = 556CB6701472191D009B2F34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556CB69214721A42009B2F34 /* 360Controller.kext */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = 360Controller.kext;
+			remoteRef = 556CB69114721A42009B2F34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXTargetDependency section */
+		556CB67C147219DA009B2F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Wireless360Controller;
+			targetProxy = 556CB67B147219DA009B2F34 /* PBXContainerItemProxy */;
+		};
+		556CB67E147219DA009B2F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WirelessGamingReceiver;
+			targetProxy = 556CB67D147219DA009B2F34 /* PBXContainerItemProxy */;
+		};
+		556CB682147219DA009B2F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 360Daemon;
+			targetProxy = 556CB681147219DA009B2F34 /* PBXContainerItemProxy */;
+		};
+		556CB684147219DA009B2F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pref360Control;
+			targetProxy = 556CB683147219DA009B2F34 /* PBXContainerItemProxy */;
+		};
+		556CB69514721F61009B2F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 360Controller;
+			targetProxy = 556CB69414721F61009B2F34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		556CB60814721622009B2F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		556CB60914721622009B2F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		556CB679147219C7009B2F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		556CB67A147219C7009B2F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		556CB60614721622009B2F34 /* Build configuration list for PBXProject "360Builder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556CB60814721622009B2F34 /* Debug */,
+				556CB60914721622009B2F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556CB678147219C7009B2F34 /* Build configuration list for PBXAggregateTarget "360 Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556CB679147219C7009B2F34 /* Debug */,
+				556CB67A147219C7009B2F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 556CB60314721622009B2F34 /* Project object */;
+}

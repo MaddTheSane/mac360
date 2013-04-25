@@ -41,7 +41,7 @@ static NSString* GetDeviceName(io_service_t device)
 
 @implementation DeviceItem
 
-+ allocateDeviceItemForDevice:(io_service_t)device
++ (id)allocateDeviceItemForDevice:(io_service_t)device
 {
     DeviceItem *item;
     IOReturn ret;
@@ -80,6 +80,14 @@ fail:
 - (NSString*)name
 {
     return deviceName;
+}
+
+- (void)finalize
+{
+	if(deviceHandle!=0) IOObjectRelease(deviceHandle);
+    if(interface!=NULL) (*interface)->Release(interface);
+    if(forceFeedback!=0) FFReleaseDevice(forceFeedback);
+	[super finalize];
 }
 
 - (IOHIDDeviceInterface122**)hidDevice

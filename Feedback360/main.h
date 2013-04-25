@@ -50,7 +50,7 @@ typedef struct _Xbox360ForceFeedback {
 #define FeedbackDriverVersionNonRelRev          0
 
 // B8ED278F-EC8A-4E8E-B4CF-13E2A9D68E83
-#define FeedbackDriverUuid CFUUIDGetConstantUUIDWithBytes(NULL, 	\
+#define FeedbackDriverUuid CFUUIDGetConstantUUIDWithBytes(kCFAllocatorSystemDefault, 	\
     0xB8, 0xED, 0x27, 0x8F, 0xEC, 0x8A, 0x4E, 0x8E, 					\
     0xB4, 0xCF, 0x13, 0xE2, 0xA9, 0xD6, 0x8E, 0x83)
 

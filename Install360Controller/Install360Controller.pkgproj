@@ -287,7 +287,7 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>../Pref360Control/build/Deployment/Pref360Control.prefPane</string>
+											<string>../Pref360Control/build/Release/Pref360Control.prefPane</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
 											<key>PERMISSIONS</key>
@@ -479,14 +479,12 @@
 											<key>CHILDREN</key>
 											<array>
 												<dict>
-													<key>BUNDLE_CAN_DOWNGRADE</key>
-													<true/>
 													<key>CHILDREN</key>
 													<array/>
 													<key>GID</key>
 													<integer>0</integer>
 													<key>PATH</key>
-													<string>../360Controller/build/Deployment/360Controller.kext</string>
+													<string>../360Controller/build/Release/360Controller.kext</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
 													<key>PERMISSIONS</key>
@@ -877,13 +875,6 @@
 				<string>build</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
-			</dict>
-			<key>CERTIFICATE</key>
-			<dict>
-				<key>NAME</key>
-				<string>Developer ID Installer: Colin Munro</string>
-				<key>PATH</key>
-				<string>/Users/colin/Library/Keychains/login.keychain</string>
 			</dict>
 			<key>EXCLUDED_FILES</key>
 			<array>

@@ -3,6 +3,7 @@
 # Clear out daemon
 
 if [ -d /Library/StartupItems/360ControlDaemon ]; then
+   /bin/sh /Library/StartupItems/360ControlDaemon/360ControlDaemon stop
    /bin/rm -r /Library/StartupItems/360ControlDaemon
 fi
 
@@ -24,14 +25,17 @@ fi
 # Remove drivers
 
 if [ -d /System/Library/Extensions/360Controller.kext ]; then
+   /sbin/kextunload /System/Library/Extensions/360Controller.kext
    /bin/rm -r /System/Library/Extensions/360Controller.kext
 fi
 
 if [ -d /System/Library/Extensions/Wireless360Controller.kext ]; then
+   /sbin/kextunload /System/Library/Extensions/Wireless360Controller.kext
    /bin/rm -r /System/Library/Extensions/Wireless360Controller.kext
 fi
 
 if [ -d /System/Library/Extensions/WirelessGamingReceiver.kext ]; then
+   /sbin/kextunload /System/Library/Extensions/WirelessGamingReceiver.kext
    /bin/rm -r /System/Library/Extensions/WirelessGamingReceiver.kext
 fi
 

@@ -322,7 +322,7 @@ static void callbackHandleDevice(void *param,io_iterator_t iterator)
     [self resetDisplay];
     i=(int)[deviceList indexOfSelectedItem];
     if(([deviceArray count]==0)||(i==-1)) {
-        NSLog(@"No devices found? :( device count==%l, i==%l",(long)[deviceArray count],(long)i);
+        NSLog(@"No devices found? :( device count==%li, i==%li",(long)[deviceArray count],(long)i);
         return;
     }
     {

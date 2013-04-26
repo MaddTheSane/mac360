@@ -61,7 +61,7 @@
 	if ((self = [super initWithFrame:frameRect]) != nil) {
         NSRect rect,triangle = NSMakeRect(0, 0, 0, 0);
         
-        bUp=bDown=bLeft=bRight=FALSE;
+        bUp=bDown=bLeft=bRight=NO;
         rect=[self bounds];
         triangle.origin.x+=INSET_AMOUNT;
         triangle.origin.y+=INSET_AMOUNT;
@@ -108,25 +108,25 @@
 - (void)setUp:(BOOL)upState
 {
     bUp=upState;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setDown:(BOOL)downState
 {
     bDown=downState;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setLeft:(BOOL)leftState
 {
     bLeft=leftState;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setRight:(BOOL)rightState
 {
     bRight=rightState;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 @end

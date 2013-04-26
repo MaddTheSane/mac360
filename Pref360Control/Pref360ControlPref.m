@@ -309,7 +309,7 @@ static void callbackHandleDevice(void *param,io_iterator_t iterator)
 // Start using a HID device
 - (void)startDevice
 {
-    int i,j;
+    NSInteger i,j;
     CFArrayRef elements;
     CFDictionaryRef element;
     CFTypeRef object;
@@ -322,7 +322,7 @@ static void callbackHandleDevice(void *param,io_iterator_t iterator)
     [self resetDisplay];
     i=(int)[deviceList indexOfSelectedItem];
     if(([deviceArray count]==0)||(i==-1)) {
-        NSLog(@"No devices found? :( device count==%i, i==%i",(int)[deviceArray count],i);
+        NSLog(@"No devices found? :( device count==%l, i==%l",(long)[deviceArray count],(long)i);
         return;
     }
     {
@@ -337,17 +337,17 @@ static void callbackHandleDevice(void *param,io_iterator_t iterator)
         // Make note of failure?
         return;
     }
-    for(i=0;i<CFArrayGetCount(elements);i++) {
-        element=CFArrayGetValueAtIndex(elements,i);
+    for(i = 0; i < CFArrayGetCount(elements); i++) {
+        element = CFArrayGetValueAtIndex(elements, i);
         // Get cookie
-        object=CFDictionaryGetValue(element,CFSTR(kIOHIDElementCookieKey));
-        if((object==NULL)||(CFGetTypeID(object)!=CFNumberGetTypeID())) continue;
-        if(!CFNumberGetValue((CFNumberRef)object,kCFNumberLongType,&number)) continue;
+        object = CFDictionaryGetValue(element, CFSTR(kIOHIDElementCookieKey));
+        if((object == NULL)||(CFGetTypeID(object) != CFNumberGetTypeID())) continue;
+        if(!CFNumberGetValue((CFNumberRef)object, kCFNumberLongType, &number)) continue;
         cookie=(IOHIDElementCookie)number;
         // Get usage
-        object=CFDictionaryGetValue(element,CFSTR(kIOHIDElementUsageKey));
-        if((object==0)||(CFGetTypeID(object)!=CFNumberGetTypeID())) continue;
-        if(!CFNumberGetValue((CFNumberRef)object,kCFNumberLongType,&number)) continue;
+        object = CFDictionaryGetValue(element, CFSTR(kIOHIDElementUsageKey));
+        if((object == 0)||(CFGetTypeID(object) != CFNumberGetTypeID())) continue;
+        if(!CFNumberGetValue((CFNumberRef)object, kCFNumberLongType,&number)) continue;
         usage=number;
         // Get usage page
         object=CFDictionaryGetValue(element,CFSTR(kIOHIDElementUsagePageKey));

@@ -19,14 +19,15 @@
     You should have received a copy of the GNU General Public License
     along with Foobar; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/#import "MyCentreButtons.h"
+*/
+#import "MyCentreButtons.h"
 
 @implementation MyCentreButtons
 
 - (id)initWithFrame:(NSRect)frameRect
 {
 	if ((self = [super initWithFrame:frameRect]) != nil) {
-		back=start=appSpecific=FALSE;
+		back=start=appSpecific=NO;
 	}
 	return self;
 }
@@ -77,19 +78,19 @@
 - (void)setBack:(BOOL)bBack
 {
     back=bBack;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setStart:(BOOL)bStart
 {
     start=bStart;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setSpecific:(BOOL)bSpecific
 {
     appSpecific=bSpecific;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 @end

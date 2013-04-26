@@ -29,7 +29,7 @@
 - (id)initWithFrame:(NSRect)frameRect
 {
 	if ((self = [super initWithFrame:frameRect]) != nil) {
-        a=b=x=y=FALSE;
+        a=b=x=y=NO;
 	}
 	return self;
 }
@@ -95,25 +95,25 @@
 - (void)setA:(BOOL)aVal
 {
     a=aVal;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setB:(BOOL)bVal
 {
     b=bVal;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setX:(BOOL)xVal
 {
     x=xVal;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setY:(BOOL)yVal
 {
     y=yVal;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 @end

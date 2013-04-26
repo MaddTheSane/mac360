@@ -53,7 +53,7 @@
 - (void)setPressed:(BOOL)b
 {
     pressed=b;
-    [self setNeedsDisplay:TRUE];
+    [self setNeedsDisplay:YES];
 }
 
 @end

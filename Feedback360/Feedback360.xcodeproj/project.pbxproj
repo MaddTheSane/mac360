@@ -218,31 +218,19 @@
 		3BBDC69809793BF60023AAD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc64,
-					ppc,
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				"SDKROOT[arch=ppc64]" = macosx10.5;
 			};
 			name = Debug;
 		};
 		3BBDC69909793BF60023AAD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc64,
-					ppc,
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
-				"SDKROOT[arch=ppc64]" = macosx10.5;
 			};
 			name = Release;
 		};

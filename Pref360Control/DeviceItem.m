@@ -24,22 +24,42 @@
 
 static NSString* GetDeviceName(io_service_t device)
 {
-    CFMutableDictionaryRef serviceProperties;
-    NSDictionary *properties;
     NSString *deviceName = nil;
+	NSAutoreleasePool *pool = [NSAutoreleasePool new];
+	CFMutableDictionaryRef serviceProperties;
+    NSDictionary *properties;
     
     if (IORegistryEntryCreateCFProperties(device, &serviceProperties, kCFAllocatorDefault, kNilOptions) != KERN_SUCCESS)
-        return nil;
+	{
+        [pool drain];
+		return nil;
+	}
     properties = (NSDictionary*)serviceProperties;
-    deviceName = [properties objectForKey:(NSString*)CFSTR(kIOHIDProductKey)];
+    deviceName = [properties objectForKey:@kIOHIDProductKey];
     if (deviceName == nil)
         deviceName = [properties objectForKey:@"USB Product Name"];
     [deviceName retain];
     CFRelease(serviceProperties);
-    return deviceName;
+	[pool drain];
+    return [deviceName autorelease];
 }
 
+@interface DeviceItem()
+
+@property (retain, readwrite, setter=setDeviceName:) NSString *name;
+@property (readwrite, setter=setInterface:) IOHIDDeviceInterface122** hidDevice;
+@property (readwrite, setter=setForceFeedback:) FFDeviceObjectReference ffDevice;
+@property (readwrite, setter=setDeviceHandle:) io_service_t rawDevice;
+
+@end
+
+
 @implementation DeviceItem
+
+@synthesize name = deviceName;
+@synthesize hidDevice = interface;
+@synthesize ffDevice = forceFeedback;
+@synthesize rawDevice = deviceHandle;
 
 + (id)allocateDeviceItemForDevice:(io_service_t)device
 {
@@ -55,10 +75,11 @@ static NSString* GetDeviceName(io_service_t device)
     ret=(*plugInInterface)->QueryInterface(plugInInterface,CFUUIDGetUUIDBytes(kIOHIDDeviceInterfaceID122),(LPVOID)&item->interface);
     (*plugInInterface)->Release(plugInInterface);
     if(ret!=kIOReturnSuccess) goto fail;
-    item->forceFeedback=0;
-    FFCreateDevice(device,&item->forceFeedback);
-    item->deviceHandle=device;
-    item->deviceName = GetDeviceName(device);
+	FFDeviceObjectReference FFItem = 0;
+    FFCreateDevice(device,&FFItem);
+	item.ffDevice = FFItem;
+    item.rawDevice=device;
+    item.name = GetDeviceName(device);
     return item;
 fail:
     IOObjectRelease(device);
@@ -88,21 +109,6 @@ fail:
     if(interface!=NULL) (*interface)->Release(interface);
     if(forceFeedback!=0) FFReleaseDevice(forceFeedback);
 	[super finalize];
-}
-
-- (IOHIDDeviceInterface122**)hidDevice
-{
-    return interface;
-}
-
-- (FFDeviceObjectReference)ffDevice
-{
-    return forceFeedback;
-}
-
-- (io_service_t)rawDevice
-{
-    return deviceHandle;
 }
 
 @end

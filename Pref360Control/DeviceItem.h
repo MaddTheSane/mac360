@@ -36,9 +36,9 @@
 
 + (id)allocateDeviceItemForDevice:(io_service_t)device;
 
-- (NSString*)name;
-- (IOHIDDeviceInterface122**)hidDevice;
-- (FFDeviceObjectReference)ffDevice;
-- (io_service_t)rawDevice;
+@property (retain, readonly) NSString *name;
+@property (readonly) IOHIDDeviceInterface122** hidDevice;
+@property (readonly) FFDeviceObjectReference ffDevice;
+@property (readonly) io_service_t rawDevice;
 
 @end

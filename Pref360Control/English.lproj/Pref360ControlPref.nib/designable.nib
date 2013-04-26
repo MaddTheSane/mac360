@@ -13,6 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="6"/>
+			<integer value="200"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -328,7 +329,7 @@
 							<reference key="NSNextKeyView" ref="1012678591"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSSliderCell" key="NSCell" id="984839922">
-								<int key="NSCellFlags">67108864</int>
+								<int key="NSCellFlags">67371264</int>
 								<int key="NSCellFlags2">0</int>
 								<object class="NSMutableString" key="NSContents">
 									<characters key="NS.bytes"/>
@@ -590,7 +591,7 @@ eW91IGVuam95IHRoaXMgZHJpdmVyIQ</string>
 							<reference key="NSNextKeyView" ref="697093889"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSSliderCell" key="NSCell" id="1025201993">
-								<int key="NSCellFlags">67108864</int>
+								<int key="NSCellFlags">67371264</int>
 								<int key="NSCellFlags2">0</int>
 								<string key="NSContents"/>
 								<reference key="NSControlView" ref="82694390"/>
@@ -698,7 +699,7 @@ eW91IGVuam95IHRoaXMgZHJpdmVyIQ</string>
 				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
 				<string key="NSWindowContentMinSize">{490, 150}</string>
 				<object class="NSView" key="NSWindowView" id="810235426">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -918,6 +919,7 @@ eW91IGVuam95IHRoaXMgZHJpdmVyIQ</string>
 						</object>
 					</object>
 					<string key="NSFrameSize">{519, 336}</string>
+					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
 				<string key="NSMinSize">{490, 172}</string>

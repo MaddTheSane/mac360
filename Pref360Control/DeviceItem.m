@@ -100,11 +100,6 @@ fail:
     [super dealloc];
 }
 
-- (NSString*)name
-{
-    return deviceName;
-}
-
 - (void)finalize
 {
 	if(deviceHandle!=0) IOObjectRelease(deviceHandle);

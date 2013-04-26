@@ -14,10 +14,12 @@
 			);
 			dependencies = (
 				556CB69514721F61009B2F34 /* PBXTargetDependency */,
+				556CB682147219DA009B2F34 /* PBXTargetDependency */,
+				55F1A7C1172B22A900642B8A /* PBXTargetDependency */,
+				55F1A7BF172B22A900642B8A /* PBXTargetDependency */,
+				556CB684147219DA009B2F34 /* PBXTargetDependency */,
 				556CB67C147219DA009B2F34 /* PBXTargetDependency */,
 				556CB67E147219DA009B2F34 /* PBXTargetDependency */,
-				556CB682147219DA009B2F34 /* PBXTargetDependency */,
-				556CB684147219DA009B2F34 /* PBXTargetDependency */,
 			);
 			name = "360 Build";
 			productName = "360 Build";
@@ -95,6 +97,34 @@
 			remoteGlobalIDString = 32D94FC30562CBF700B6AF17;
 			remoteInfo = 360Controller;
 		};
+		55F1A7B5172B224900642B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F1A7B1172B224900642B8A /* DriverTool.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E /* DriverTool */;
+			remoteInfo = DriverTool;
+		};
+		55F1A7BB172B225800642B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F1A7B7172B225800642B8A /* Feedback360.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD /* Feedback360.plugin */;
+			remoteInfo = Feedback360;
+		};
+		55F1A7BE172B22A900642B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F1A7B7172B225800642B8A /* Feedback360.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD /* Feedback360 */;
+			remoteInfo = Feedback360;
+		};
+		55F1A7C0172B22A900642B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F1A7B1172B224900642B8A /* DriverTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76F960486AA7600D96B5E /* DriverTool */;
+			remoteInfo = DriverTool;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +133,8 @@
 		556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Wireless360Controller.xcodeproj; path = Wireless360Controller/Wireless360Controller.xcodeproj; sourceTree = "<group>"; };
 		556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WirelessGamingReceiver.xcodeproj; path = WirelessGamingReceiver/WirelessGamingReceiver.xcodeproj; sourceTree = "<group>"; };
 		556CB68914721A42009B2F34 /* 360Controller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = 360Controller.xcodeproj; path = 360Controller/360Controller.xcodeproj; sourceTree = "<group>"; };
+		55F1A7B1172B224900642B8A /* DriverTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DriverTool.xcodeproj; path = DriverTool/DriverTool.xcodeproj; sourceTree = "<group>"; };
+		55F1A7B7172B225800642B8A /* Feedback360.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Feedback360.xcodeproj; path = Feedback360/Feedback360.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -110,10 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				556CB68914721A42009B2F34 /* 360Controller.xcodeproj */,
-				556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */,
-				556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */,
-				556CB65114721912009B2F34 /* Pref360Control.xcodeproj */,
 				556CB63D147218E9009B2F34 /* 360Daemon.xcodeproj */,
+				55F1A7B1172B224900642B8A /* DriverTool.xcodeproj */,
+				55F1A7B7172B225800642B8A /* Feedback360.xcodeproj */,
+				556CB65114721912009B2F34 /* Pref360Control.xcodeproj */,
+				556CB66014721918009B2F34 /* Wireless360Controller.xcodeproj */,
+				556CB6691472191D009B2F34 /* WirelessGamingReceiver.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +191,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		55F1A7B2172B224900642B8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F1A7B6172B224900642B8A /* DriverTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F1A7B8172B225800642B8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F1A7BC172B225800642B8A /* Feedback360.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
@@ -182,6 +232,14 @@
 				{
 					ProductGroup = 556CB63E147218E9009B2F34 /* Products */;
 					ProjectRef = 556CB63D147218E9009B2F34 /* 360Daemon.xcodeproj */;
+				},
+				{
+					ProductGroup = 55F1A7B2172B224900642B8A /* Products */;
+					ProjectRef = 55F1A7B1172B224900642B8A /* DriverTool.xcodeproj */;
+				},
+				{
+					ProductGroup = 55F1A7B8172B225800642B8A /* Products */;
+					ProjectRef = 55F1A7B7172B225800642B8A /* Feedback360.xcodeproj */;
 				},
 				{
 					ProductGroup = 556CB65214721912009B2F34 /* Products */;
@@ -239,6 +297,20 @@
 			remoteRef = 556CB69114721A42009B2F34 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		55F1A7B6172B224900642B8A /* DriverTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DriverTool;
+			remoteRef = 55F1A7B5172B224900642B8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55F1A7BC172B225800642B8A /* Feedback360.plugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Feedback360.plugin;
+			remoteRef = 55F1A7BB172B225800642B8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXTargetDependency section */
@@ -266,6 +338,16 @@
 			isa = PBXTargetDependency;
 			name = 360Controller;
 			targetProxy = 556CB69414721F61009B2F34 /* PBXContainerItemProxy */;
+		};
+		55F1A7BF172B22A900642B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Feedback360;
+			targetProxy = 55F1A7BE172B22A900642B8A /* PBXContainerItemProxy */;
+		};
+		55F1A7C1172B22A900642B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DriverTool;
+			targetProxy = 55F1A7C0172B22A900642B8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

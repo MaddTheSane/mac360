@@ -237,7 +237,7 @@ static void callbackConnected(void *param,io_iterator_t iterator)
 // Supported device - disconnecting
 static void callbackDisconnected(void *param, io_iterator_t iterator)
 {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    NSAutoreleasePool * pool = [NSAutoreleasePool new];
     io_service_t object = 0;
     NSString *serial;
     int i;

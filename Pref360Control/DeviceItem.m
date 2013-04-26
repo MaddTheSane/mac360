@@ -25,22 +25,24 @@
 static NSString* GetDeviceName(io_service_t device)
 {
     NSString *deviceName = nil;
-	NSAutoreleasePool *pool = [NSAutoreleasePool new];
-	CFMutableDictionaryRef serviceProperties;
-    NSDictionary *properties;
-    
-    if (IORegistryEntryCreateCFProperties(device, &serviceProperties, kCFAllocatorDefault, kNilOptions) != KERN_SUCCESS)
 	{
-        [pool drain];
-		return nil;
+		NSAutoreleasePool *pool = [NSAutoreleasePool new];
+		CFMutableDictionaryRef serviceProperties;
+		NSDictionary *properties;
+		
+		if (IORegistryEntryCreateCFProperties(device, &serviceProperties, kCFAllocatorDefault, kNilOptions) != KERN_SUCCESS)
+		{
+			[pool drain];
+			return nil;
+		}
+		properties = (NSDictionary*)serviceProperties;
+		deviceName = [properties objectForKey:@kIOHIDProductKey];
+		if (deviceName == nil)
+			deviceName = [properties objectForKey:@"USB Product Name"];
+		[deviceName retain];
+		CFRelease(serviceProperties);
+		[pool drain];
 	}
-    properties = (NSDictionary*)serviceProperties;
-    deviceName = [properties objectForKey:@kIOHIDProductKey];
-    if (deviceName == nil)
-        deviceName = [properties objectForKey:@"USB Product Name"];
-    [deviceName retain];
-    CFRelease(serviceProperties);
-	[pool drain];
     return [deviceName autorelease];
 }
 

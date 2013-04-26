@@ -27,7 +27,7 @@
 #import <IOKit/hid/IOHIDKeys.h>
 #include <IOKit/usb/IOUSBLib.h>
 #import <ForceFeedback/ForceFeedback.h>
-#include "ControlPrefs.h"
+#import "ControlPrefs.h"
 
 #define CHECK_SHOWAGAIN     @"Do not show this message again"
 
@@ -68,7 +68,7 @@ static void releaseAlert(void)
 
 static void callbackAlert(CFUserNotificationRef userNotification, CFOptionFlags responseFlags)
 {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    NSAutoreleasePool * pool = [NSAutoreleasePool new];
 
     if (responseFlags & CFUserNotificationCheckBoxChecked(0))
         SetAlertDisabled(activeAlertIndex);
@@ -146,7 +146,7 @@ static void ConfigureDevice(io_service_t object)
 // Supported device - connecting - set settings?
 static void callbackConnected(void *param,io_iterator_t iterator)
 {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    NSAutoreleasePool * pool = [NSAutoreleasePool new];
     io_service_t object = 0;
     
     while ((object = IOIteratorNext(iterator)) != 0)
@@ -272,7 +272,7 @@ static void callbackDisconnected(void *param, io_iterator_t iterator)
 // Entry point
 int main (int argc, const char * argv[])
 {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    NSAutoreleasePool * pool = [NSAutoreleasePool new];
 
     foundWirelessReceiver = FALSE;
     memset(leds, 0, sizeof(leds));

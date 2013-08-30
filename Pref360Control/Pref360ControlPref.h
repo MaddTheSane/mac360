@@ -87,6 +87,8 @@
 
 - (IBAction)showDeviceList:(id)sender;
 - (IBAction)powerOff:(id)sender;
+- (IBAction)changeSetting:(id)sender;
+- (IBAction)selectDevice:(id)sender;
 
 - (mach_port_t)masterPort;
 

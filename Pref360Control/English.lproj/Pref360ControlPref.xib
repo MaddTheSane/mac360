@@ -145,7 +145,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="809746561">
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">71303168</int>
-								<string type="base64-UTF8" key="NSContents">RGV2aWNlOgo</string>
+								<string key="NSContents">Device:</string>
 								<reference key="NSSupport" ref="855035077"/>
 								<reference key="NSControlView" ref="904887625"/>
 								<object class="NSColor" key="NSBackgroundColor" id="972077515">
@@ -2108,11 +2108,15 @@ eW91IGVuam95IHRoaXMgZHJpdmVyIQ</string>
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>changeSetting:</string>
 							<string>powerOff:</string>
+							<string>selectDevice:</string>
 							<string>showDeviceList:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -2121,13 +2125,23 @@ eW91IGVuam95IHRoaXMgZHJpdmVyIQ</string>
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>changeSetting:</string>
 							<string>powerOff:</string>
+							<string>selectDevice:</string>
 							<string>showDeviceList:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
+								<string key="name">changeSetting:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
 								<string key="name">powerOff:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">selectDevice:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">

@@ -23,17 +23,17 @@
 
 #import <PreferencePanes/PreferencePanes.h>
 
-#import <IOKit/IOKitLib.h>
-#import <IOKit/IOCFPlugIn.h>
-#import <IOKit/hid/IOHIDLib.h>
-#import <IOKit/hid/IOHIDKeys.h>
-#import <ForceFeedback/ForceFeedback.h>
+#include <IOKit/IOKitLib.h>
+#include <IOKit/IOCFPlugIn.h>
+#include <IOKit/hid/IOHIDLib.h>
+#include <IOKit/hid/IOHIDKeys.h>
+#include <ForceFeedback/ForceFeedback.h>
 
-#include "MyCentreButtons.h"
-#include "MyDigitalStick.h"
-#include "MyAnalogStick.h"
-#include "MyMainButtons.h"
-#include "MyShoulderButton.h"
+#import "MyCentreButtons.h"
+#import "MyDigitalStick.h"
+#import "MyAnalogStick.h"
+#import "MyMainButtons.h"
+#import "MyShoulderButton.h"
 
 @class DeviceLister;
 

@@ -26,6 +26,10 @@
 #define AREA_INSET          4
 
 @implementation MyAnalogStick
+@synthesize positionX = x;
+@synthesize positionY = y;
+@synthesize deadzone;
+
 
 - (id)initWithFrame:(NSRect)frameRect
 {
@@ -33,8 +37,8 @@
         deadzone=0;
         x=0;
         y=0;
-        pressed=FALSE;
-        linked=FALSE;
+        pressed=NO;
+        linked=NO;
 	}
 	return self;
 }

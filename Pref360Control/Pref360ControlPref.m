@@ -681,13 +681,13 @@ static void callbackHandleDevice(void *param,io_iterator_t iterator)
 }
 
 // Handle selection from drop down menu
-- (void)selectDevice:(id)sender
+- (IBAction)selectDevice:(id)sender
 {
     [self startDevice];
 }
 
 // Handle changing a setting
-- (void)changeSetting:(id)sender
+- (IBAction)changeSetting:(id)sender
 {
     CFDictionaryRef dict;
     CFStringRef keys[8];

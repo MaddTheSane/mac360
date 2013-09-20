@@ -28,11 +28,11 @@
     int x,y;
     BOOL pressed,linked;
 }
+@property (nonatomic) int positionX;
+@property (nonatomic) int positionY;
+@property int deadzone;
 
-- (void)setDeadzone:(int)pos;
 - (void)setPositionX:(int)xPos y:(int)yPos;
-- (void)setPositionX:(int)xPos;
-- (void)setPositionY:(int)xPos;
 - (void)setPressed:(BOOL)pressedState;
 - (void)setLinked:(BOOL)linkedState;
 
